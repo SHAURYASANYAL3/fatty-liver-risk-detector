@@ -46,7 +46,8 @@ risk_score = (
 )
 
 prob = 1 / (1 + np.exp(-risk_score))
-data["FattyLiver"] = (prob > 0.6).astype(int)
+threshold = np.percentile(prob, 60)
+data["FattyLiver"] = (prob > threshold).astype(int)
 
 X = data.drop("FattyLiver", axis=1)
 y = data["FattyLiver"]
@@ -156,3 +157,4 @@ st.caption(
     "This tool demonstrates AI-assisted health risk screening using synthetic data. "
     "Not intended for clinical use."
 )
+
