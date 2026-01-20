@@ -22,7 +22,7 @@ You can use the app here:
 ### 🏠 Main Input Screen
 This is where users enter their health details.
 
-![Main Input](screenshots/input_form.png)
+![Main Input](input_form.png)
 
 ---
 
@@ -32,14 +32,14 @@ This screen shows:
 - Risk percentage
 - Risk level (Low / Medium / High)
 
-![Risk Result](screenshots/risk_result.png)
+![Risk Result](risk_result.png)
 
 ---
 
 ### 🧠 Risk Explanation Screen
 This chart shows **which factors affected the risk the most**.
 
-![Risk Explanation](screenshots/feature_contribution.png)
+![Risk Explanation](feature_contribution.png)
 
 ---
 
